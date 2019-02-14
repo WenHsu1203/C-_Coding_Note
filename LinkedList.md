@@ -1,4 +1,31 @@
 # LinkedList
+
+### Reverse
+```C++
+void reverse(Node* head) {
+	Node* cur = head;
+	Node* prev = nullptr;
+	Node* next = nullptr;
+	while(cur != nullptr) {
+		next = cur->next;
+		cur->next = prev;
+		prev = cur;
+		cur = next;
+	}
+	head = prev;
+}
+```
+### Slow-Fast
+```C++
+// to find the middle of the list
+slow = head;
+fast = head;
+while (fast && fast->next) {
+	slow = losw->next;
+	fast = fast->next->next;
+}
+
+```
 ### Structure
 ```C++
 struct Node {
