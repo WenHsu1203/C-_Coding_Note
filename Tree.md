@@ -48,6 +48,7 @@ void InOrder(Node* cur)
 *  ALl the big-O for each of traversal is O(n)
 
 Expression Evaluation:
+
 	1. If the current node is a number, return its value
 	2. Recursively evaluate the left subtree and get the result
 	3. Recursively evaluate the right subtree and get the result
