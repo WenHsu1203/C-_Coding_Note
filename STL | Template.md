@@ -142,6 +142,15 @@ int main() {
 	return 0;
 }
 ```
+
+* Reverse a vector
+
+```C++
+#include <algorithm>
+#include <vector>
+reverse(vec.begin(), vec.end());
+```
+
 #### 2. `list`
 * Like vector, list has `push_back`, `pop_back`, `front`, `back`, `size`, `empty`
 * EXTRA: `push_front`, `pop_front` 
