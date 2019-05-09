@@ -167,6 +167,43 @@ int main()
 	}
 }
 ```
+
+* `unordered_map.count`
+
+>Searches the container for elements whose key is k and returns the number of elements found. Because unordered_map containers do not allow for duplicate keys, this means that the function actually returns 1 if an element with that key exists in the container, and zero otherwise.
+
+```C++
+#include <iostream>
+#include <string>
+#include <unordered_map>
+using namespace std;
+
+int main () {
+  unordered_map<string,double> mymap = {
+     {"Burger",2.99},
+     {"Fries",1.99},
+     {"Soda",1.50} };
+
+  for (auto& x: {"Burger","Pizza","Salad","Soda"}) {
+    if (mymap.count(x)>0)
+      cout << "mymap has " << x << endl;
+    else
+      cout << "mymap has no " << x << endl;
+  }
+
+  return 0;
+}
+```
+
+* Output
+
+```C++
+mymap has Burger
+mymap has no Pizza
+mymap has no Salad
+mymap has Soda
+```
+
 * Hash Table vs. Binary Search Trees
 
 |               | HashTable      | BST      |
